@@ -1,0 +1,109 @@
+a
+{
+	font : 20pt Georgia;
+	color : #DCDCDC; 
+	text-decoration : none;
+}
+
+.a1:active
+{
+	font-size : 125%; 
+}
+
+.a1:hover
+{
+	font-size : 125%; 
+}
+
+body
+{
+	background-image : url("starsbackground.jpg");
+}
+
+.button
+{
+	background-color : #DCDCDC;
+	border : white solid; 
+	padding : 15px 25px; 
+	text-decoration : none;
+	color : black;
+	margin : auto; 
+	display : inline-block;
+	cursor : pointer; 
+
+}
+
+.title
+{
+	padding-top : -15px; 
+	color : #DCDCDC;
+	font : 50pt Georgia;
+}
+
+.description
+{
+
+	padding-top : 10px; 
+	color : #DCDCDC;
+	font : 25pt Georgia;
+	padding-top : 
+}
+
+span
+{
+	display : inline-block;
+	vertical-align : top;
+	text-align : justify; 
+	line-height : 130%;
+	width : 25%;
+	padding : 4%;
+	font : 15pt Georgia; 
+	color : #DCDCDC;
+}
+
+#weightchange
+{
+	font : 15pt Georgia;
+	color : #DCDCDC; 
+}
+
+#userweight
+{
+	width : 100px; 
+	-webkit-transition : width .45s cubic-bezier(.16,.8,.99,.06);
+	transition : width .45s cubic-bezier(.16,.8,.99,.06); 
+	opacity: 0.6;
+}
+
+#userweight:focus
+{
+	width : 215px; 
+}
+
+#container 
+{
+	background-image : url("starsbackground.jpg");
+	border: 2px solid white;
+	padding: 30px;
+	margin: 0px auto;
+	width: 1000px;
+}
+
+#factspage
+{
+	width : 70px; 
+	display : inline-block;
+	padding-left : 35%; 
+}	
+
+.weightbot
+{
+	color : #DCDCDC;
+	font : 20pt Georgia;
+}
+
+h1
+{
+	display : block; 
+	text-align : center;
+}
