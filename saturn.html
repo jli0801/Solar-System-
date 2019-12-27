@@ -1,0 +1,61 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Saturn</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			img
+			{
+				display : block;
+				margin : auto;
+				width : 60%;
+			}
+			</style>
+			<script>
+			function initialize()
+			{
+			weightChange = document.getElementById ("weightchange");
+			}
+			function getWeight()
+			{
+			userWeight = userweight.value;
+			changedW = userWeight * .916;
+			weightChange.innerHTML = changedW;
+			}
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container">
+	<h1>
+	<div class = "title"> Saturn </div>
+	<hr> 
+	<div class = "description"> The Planet With Visible Rings: </div>
+	</h1> 
+	<span> Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. Saturn’s average radius is around nine times of Earth’s. 
+	It is only one-eighth the average density of Earth. Saturn is named after the Roman god of agriculture. Saturn's interior is composed of a core of iron–nickel and rock. 
+	Its core is surrounded by a deep layer of metallic hydrogen. Saturn has a pale yellow hue due to ammonia crystals. Saturn's magnetic field strength is around one-twentieth 
+	of Jupiter' and about 578 times more powerful than Earth’s. The outer atmosphere is generally bland and the yellow and gold bands seen come from the fast winds in the upper 
+	atmosphere, which can reach up to 1,100 mph around its equator. </span>
+	<span> Saturn spins faster than any other planet except Jupiter, completing a rotation roughly every 10.5 hours. This rapid spinning causes Saturn to bulge at its equator 
+	and flatten at its poles. Wind speeds on Saturn can reach 1,800 km/h, higher than on Jupiter. Saturn has at least 62 moons and most of Saturn's moons are named after other Titans. 
+	Saturn's largest moon, Titan, is slightly larger than Mercury and is the second-largest moon in the solar system behind Jupiter's moon Ganymede. </span>
+	<span> Galileo Galilei was the first to see Saturn's rings in 1610 but later on Christiaan Huygens, who had a more advanced telescope, theorized that Saturn has flat, thin rings.
+	Later on, astronomers discovered that Saturn actually has many rings made of ice and rocks. The largest ring spans up to 200 times the diameter of the planet. The rings are 
+	generally named alphabetically in the order they were discovered. The main rings, working out from the planet, are known as C, B and A. The innermost is the extremely faint 
+	D ring, while the outermost, discovered in 2009, could fit a billion Earths within it. </span>
+	
+	<img src = "saturnlayers.png" />
+	<br />
+	<h1>
+	<div class = "description"> Input your weight: </div>
+	<input type = "number" id = "userweight" >
+	<input type ="button" class = "button" value = "Enter!" onclick = "getWeight();">
+	<div id = "weightchange"> </div>
+	
+	
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a> 
+	</h1> 
+	</div>
+	</body>
+</html>

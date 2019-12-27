@@ -1,0 +1,165 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Fun Facts!</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			#factsbutton
+			{
+			font : 15pt Georgia; 
+			color : #DCDCDC;
+			}
+			
+			img.rotatingsys
+			{
+				display : block;
+				margin : auto;
+				padding-top : 15px;
+				width : 50%;
+			}
+			
+			#answertosign
+			{
+			display : inline;
+			left: 0px; 
+			font : 15pt Georgia; 
+			color : #DCDCDC;
+			}
+			
+			#mySelect
+			{
+			opacity : 0.8;
+			}
+			
+			a
+			{
+				font : 20pt Georgia;
+				color : #DCDCDC; 
+				text-decoration : none;
+			}
+
+			.a1:active
+			{
+				font-size : 125%; 
+			}
+
+			.a1:hover
+			{
+				font-size : 125%; 
+			}
+			</style>
+			<script>
+			function initialize()
+			{
+			randomFacts = ["The hottest planet does not mean that it is the closest to the sun!","Pluto's width is smaller than the United States of America!","Jupiter has the largest ocean among all the planets!", "The four smaller inner planets also known as the terrestrial planets are primarily made out of rock and metal.","The four outer planets also known as the gas giants are larger than the inner planets.", "The two outermost planes are composed largely of ice and are sometimes also referred to as the ice giants.",
+			"Sunlight takes close to 8 minutes to reach the Earth!", "Most of the planets are named after Roman Gods!"];
+			factsS = document.getElementById("factss");
+			anstoS = document.getElementById ("answertosign");
+			chosenValue = document.getElementById("mySelect").value;
+			}
+			function getRandomFact()
+			{
+			rFact = Math.floor(Math.random()* randomFacts.length);
+			factsS.innerHTML = randomFacts[rFact];
+			}
+			
+			function submitS()
+			{
+			var chosenValue = document.getElementById("mySelect").value;
+				
+				if (chosenValue == "None")
+				{
+					anstoS.innerHTML = "Please chose your sign!";
+				}
+				else if (chosenValue == "Aries")
+				{
+					anstoS.innerHTML = "It's ruler is Mars!";
+				}
+				else if (chosenValue == "Taurus")
+				{
+					anstoS.innerHTML = "It's ruler is Venus!";
+				}
+				else if (chosenValue == "Gemini")
+				{
+					anstoS.innerHTML = "It's ruler is Mercury!";
+				}
+				else if (chosenValue == "Cancer")
+				{
+					anstoS.innerHTML = "It's ruler is the Moon!";
+				}
+				else if (chosenValue == "Leo")
+				{
+					anstoS.innerHTML = "It's ruler is the Sun!";
+				}
+				else if (chosenValue == "Virgo")
+				{
+					anstoS.innerHTML = "It's ruler is Mercury!";
+				}
+				else if (chosenValue == "Libra")
+				{
+					anstoS.innerHTML = "It's ruler is Venus!";
+				}
+				else if (chosenValue == "Scorpio")
+				{
+					anstoS.innerHTML = "It's ruler is Pluto and it's co-ruler is Mars!";
+				}
+				else if (chosenValue == "Sagittarius")
+				{
+					anstoS.innerHTML = "It's ruler is Jupiter!";
+				}
+				else if (chosenValue == "Capricorn")
+				{
+					anstoS.innerHTML = "It's ruler is Saturn!";
+				}
+				else if (chosenValue == "Aquarius")
+				{
+					anstoS.innerHTML = "It's ruler is Uranus and it's co-ruler is Saturn!";
+				}
+				else
+				{
+					anstoS.innerHTML = "It's ruler is Neptune and it's co-ruler is Jupiter!";
+				}
+			}
+			
+			
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container">
+	<h1>
+	<div class = "title"> Extras about the Solar System! </div>
+	<hr>	
+	<div class = "description"> Random facts, and more! </div>
+	
+	
+	<span> <input type ="button" class = "button" value = "Random Facts!" onclick = "getRandomFact();"> </span>
+	<span id = "factss"> Click the button for random facts!</span> 
+ 
+	
+	<div class = "description"> Did you know that each zodiac sign is "ruled" by a planet?</div>
+	<select id = "mySelect" onchange = "submitS();">
+	<option value = "None"> </option>
+	<option value = "Aries" > Aries </option>
+	<option value = "Taurus" > Taurus</option>
+	<option value = "Gemini" > Gemini </option>
+	<option value = "Cancer" > Cancer </option>
+	<option value = "Leo" > Leo </option>
+	<option value = "Virgo" > Virgo </option>
+	<option value = "Libra" > Libra </option>
+	<option value = "Scorpio" > Scorpio </option>
+	<option value = "Sagittarius" > Sagittarius </option>
+	<option value = "Capricorn" > Capricorn </option>
+	<option value = "Aquarius" > Aquarius </option>
+	<option value = "Pisces" > Pisces </option>
+	</select>
+	<br /> 
+	<div id = "answertosign"> </div>
+	<br />
+	<img src = "rotating.gif" class = "rotatingsys" >
+	<br /> 
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a>
+	</h1>
+	</div> 
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Solar System!</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			body
+			{
+			background-image : url("starsbackground.jpg");
+			}
+			a
+			{
+			font-size : 0pt; 
+			}
+			</style>
+			<script>
+			
+			</script>
+	</head>
+	<body onload = "initialize();">
+	
+	<a href = "more.html"> <img id = "factspage" src = "randomplanet.gif"> </a>
+	<div class = "title"> The Solar System </div>
+	<div class = "description"> Click on the planets, stars or the moon to learn more about it and to see your weight on them!</div>
+	
+	<img src = "solar.jpeg" class = "solar" usemap = "#solarsystem" />
+	<map name = "solarsystem">
+	<area shape = "circle" coords = "(1,310, 150)" href = "sun.html" />
+	<area shape = "circle" coords = "(202,340,14)" href = "mercury.html" />
+	<area shape = "circle" coords = "(294,340,34)" href = "venus.html" />
+	<area shape = "circle" coords = "(410,340,32)" href = "earth.html" />
+	<area shape = "circle" coords = "(440, 275, 15)" href = "earthmoon.html" /> 
+	<area shape = "circle" coords = "(521,340, 33)" href = "mars.html" />
+	<area shape = "circle" coords = "(655,340,55)" href = "jupiter.html" /> 
+	<area shape = "poly" coords = "(853,306,870,315,916,335,938,357,894,380,777,352,750,322,793,306,835,306)" href = "saturn.html" /> 
+	<area shape = "circle" coords = "(1002,340, 42)" href = "uranus.html" />
+	<area shape = "circle" coords = "(1132, 340, 50)" href = "neptune.html" />
+	</map>
+	
+
+	</body>
+</html>

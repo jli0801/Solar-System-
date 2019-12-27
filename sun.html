@@ -1,0 +1,77 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Sun</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			
+			img
+			{
+				display : block;
+				margin : auto;
+				padding-top : 15px;
+				width : 65%;
+			}
+	
+			sup
+			{
+				vertical-align : super;
+				font-size : smaller;
+			}
+			
+			span
+			{
+				display : inline-block;
+				vertical-align : top;
+				text-align : justify; 
+				line-height : 130%;
+				width : 24%;
+				padding : 2%;
+				font : 15pt Georgia; 
+				color : #DCDCDC;
+			}
+			
+			</style>
+			
+			<script>
+			function initialize()
+			{
+			weightChange = document.getElementById ("weightchange");
+			}
+			function getWeight()
+			{
+			userWeight = userweight.value;
+			changedW = userWeight * 27.072;
+			weightChange.innerHTML = changedW;
+			}
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container">
+	<h1>
+	<div class = "title"> The Sun: </div>
+	<hr> 
+	<div class = "description"> A hot sphere of plasma that's in the center of the Solar System! </div>
+	
+	<span class = "des1">The sun is a hot sphere of glowing gases. At the heart of our solar system, its gravity holds the solar system together. There’s electric currents in the sun that generate a magnetic field allowing electric gas to blow outwards. The sun is responsible for the Earth’s weather, climate, change in seasons, radiation and aurorae, which is also known as the northern lights in where the charged particles from the magnetic space around Earth get accelerated by storms from the sun and causes light to appear.</span>
+	<span class = "des2"> The sun is around 4.5 billion years old and its temperature has increased 300 degrees with a 6% increase in radius. It’s made out of around 73% hydrogen and 25% helium. Compared to the Earth, the diameter of the sun is 109 times of the Earth’s diameter. In addition to that, the Sun’s mass is 330,000 times that of the Earth, making the sun account for around 99% of the mass in the solar system.  The solar constant is equal to approximately 1,368 W/m <sup> 2 </sup> with a distance of one AU from the Sun.</span> 
+	<span class = "des3"> At the top of Earth's atmosphere, sunlight is composed of around 50% infrared light, 40% visible light, and 10% ultraviolet light. Did you know that:
+	The Sun's color is white when viewed from space or when the Sun is high in the sky but when the sun is low in the sky, scattering makes the Sun seem orange, red, and magenta. 
+	As you can see from the diagram below, the Sun is composed of several different layers. </span>
+	<img src = "sunlayers.png" />
+	<br />
+	
+	
+	<div class = "description"> Input your weight: </div>
+	<input type = "number" id = "userweight" >
+	<input type ="button" class = "button" value = "Enter!" onclick = "getWeight();">
+	<div id = "weightchange"> </div>
+	
+	
+	<br />
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a> 
+	</h1> 
+	</div> 
+	</body>
+</html>

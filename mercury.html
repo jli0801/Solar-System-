@@ -1,0 +1,62 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Mercury</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			img
+			{
+				display : block;
+				margin : auto;
+				padding-top : 15px;
+				width : 40%;
+			}
+			</style>
+			<script>
+			function initialize()
+			{
+			weightChange = document.getElementById ("weightchange");
+			}
+			function getWeight()
+			{
+			userWeight = userweight.value;
+			changedW = userWeight * .378;
+			weightChange.innerHTML = changedW;
+			}
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container">
+	<h1>
+	<div class = "title"> Mercury </div>
+	<hr> 
+	<div class = "description"> The smallest planet of them all! </div>
+	</h1>
+	<span class = "des1"> Mercury is the smallest and closest to the sun, being the innermost planet. 
+	Due to the closeness to the sun, it makes spacecrafts unable to land on it and the closest NASA has ever gone was to go past Mars and taking pictures of it. 
+	The most recent spacecraft was NASA’s MESSENGER which flew by Mercury in 2008 and 2009. In March 2011, it began to orbit Mercury and willcontribute to the study of 
+	Mercury that have not been seen before.</span>
+	<span class = "des2"> Its orbital period is 88 days and is less than any other planet. From Earth, it is observed to orbit
+	in 116 days. Did you know that: Since Mercury has a slower spin and shorter year than the Earth
+	does, it will take a longer time for the sun to set and rise each time. Mercury only has one sunrise
+	every 180 Earth days and it takes 59 earth days to complete the orbital period. </span>
+	<span class = "des3"> Mercury can be described as slightly larger than Earth’s moon and is made mostly out of iron.
+	For it’s size, Mercury seems to weigh more than it looks. The surface of Mercury has craters like
+	Earth’s moon and they’re mostly made from rocks falling from space. Unlike the Earth, Mercury
+	doesn’t have a blanket of air surrounding it. This makes Mercury very hot in temperature and
+	inhabitable. </span>
+	
+	<img src = "mercurysurface.jpg" />
+	
+	<h1>
+	<div class = "description"> Input your weight: </div>
+	<input type = "number" id = "userweight" >
+	<input type ="button" class = "button" value = "Enter!" onclick = "getWeight();">
+	<div id = "weightchange"> </div>
+	
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a>
+	</h1>	
+	</div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Jupiter</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			img
+			{
+				display : block;
+				margin : auto;
+				padding-top : 15px;
+				width : 80%;
+			}
+			</style>
+			<script>
+			function initialize()
+			{
+			weightChange = document.getElementById ("weightchange");
+			}
+			function getWeight()
+			{
+			userWeight = userweight.value;
+			changedW = userWeight * 2.364;
+			weightChange.innerHTML = changedW;
+			}
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container"> 
+	<h1>
+	<div class = "title"> Jupiter </div>
+	<hr> 
+	<div class = "description"> The Largest Planet in Our Solar System! </div> 
+	</h1> 
+	<span> Jupiter is the fifth planet from the Sun and the largest planet. Jupiter is a gas giant, like Saturn, Uranus and Neptune. 
+	The Romans named it after their god Jupiter. It’s the third-brightest object in the night sky after the Moon and Venus. Jupiter is primarily composed of 
+	hydrogen with a quarter of its mass being helium. Its mass is one-thousandths of the Sun’s mass. It is 2.5 times the total weight of the other planets in the Solar System. 
+	Jupiter's radius is about 1/10 the radius of the Sun. Like other planets, Jupiter lacks a well-defined solid surface.  </span>
+	<span> Jupiter had a ring system and a powerful magnetic field. Jupiter has at least 67 moons, including the four large Galilean moons discovered by 
+	Galileo Galilei in 1610. Io, Europa, Ganymede, and Callisto are the four largest moons. The orbits of Io, Europa, and Ganymede form a pattern known as a Laplace resonance. 
+	Every four orbits that Io makes around Jupiter, Europa makes two orbits and Ganymede makes one. Jupiter also has three rings, but they’re harder to see and are not prominent 
+	when compared to Saturn. </span>
+	<span> Jupiter has the shortest day in the solar system. One day on Jupiter takes only about 10 hours and Jupiter makes a complete orbit around the 
+	Sun in about 12 Earth years. Its equator is tilted on its by just 3 degrees. This means Jupiter spins close to upright and does not have extreme seasons. </span>
+ 
+	<img src = "jupiterlayers.png" />
+	<br />
+	<h1>
+	<div class = "description"> Input your weight: </div>
+	<input type = "number" id = "userweight" >
+	<input type ="button" class = "button" value = "Enter!" onclick = "getWeight();">
+	<div id = "weightchange"> </div>
+	
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a> 
+	</h1> 
+	</div> 
+	</body>
+</html>

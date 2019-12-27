@@ -1,0 +1,197 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Earth</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			
+			</style>
+			<script>
+			function initialize()
+			{
+			changedW = document.getElementById("weightchange");
+			chosenValue = document.getElementById("mySelect").value;
+			}
+			function submitW()
+			{
+			var chosenValue = document.getElementById("mySelect").value;
+				
+				if (chosenValue == "None")
+				{
+					changeNone();
+				}
+				else if (chosenValue == "Sun")
+				{
+					changeSun();
+				}
+				else if (chosenValue == "Mercury")
+				{
+					changeMercury();
+				}
+				else if (chosenValue == "Venus")
+				{
+					changeVenus();
+				}
+				else if (chosenValue == "Moon")
+				{
+					changeMoon();
+				}
+				else if (chosenValue == "Mars")
+				{
+					changeMars();
+				}
+				else if (chosenValue == "Jupiter")
+				{
+					changeJupiter();
+				}
+				else if (chosenValue == "Saturn")
+				{
+					changeSaturn();
+				}
+				else if (chosenValue == "Uranus")
+				{
+					changeUranus();
+				}
+				else
+				{
+					changeNeptune();
+				}
+				
+			}
+			
+			function changeNone()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			changedW.innerHTML = "Please pick a planet!";
+			}
+			
+			function changeSun()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/27.072;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeMercury()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/.378;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeVenus()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/.907;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeMoon()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/.166;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeMars()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/.377;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeJupiter()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/2.364;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeSaturn()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/.916;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeUranus()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/.889;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			
+			function changeNeptune()
+			{
+			var changedW = document.getElementById("weightchange");
+			var chosenValue = document.getElementById("mySelect").value;
+			userW = userweight.value;
+			weightU = userW/1.125;
+			changedW.innerHTML = Math.round(weightU);
+			}
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container" > 
+	<h1>
+	<div class = "title"> Earth </div>
+	<hr> 
+	<div class = "description"> The planet we live on!</div>
+	</h1>
+	<span> Earth is the third planet from the Sun and the only planet known to have life on it. It is also the densest planet in the Solar System and the largest of the four
+	terrestrial planets. Based on radiometric dating, Earth formed about 4.54 billion years ago. Earth's gravity interacts with other objects in space, especially the Sun and the Moon,
+	which is Earth's only natural satellite. The interaction between the Earth and Moon causes ocean tides, stabilizes the Earth's orientation, and slows its rotation. 
+	During one orbit around the Sun, Earth rotates about its axis over 365 times. Earth's axis of rotation is tilted, causing the seasons to change. </span>
+	<span> Earth's lithosphere is divided into rigid tectonic plates that migrate across the surface. Around 71% of Earth's surface is covered with water. 
+	The remaining 29% is land consisting of continents and islands that together have many other sources of water. The majority of Earth's polar regions are covered in ice. 
+	The interior of the Earth is a solid iron inner core, with a liquid outer core that generates the Earth's magnetic field, and a mantle that moves plate tectonics. </span>
+	<span> Over 99% of all species that ever lived on Earth are extinct. Estimates of the number of species on Earth cary differently and most species have not been 
+	described due to the lack of research. Currently, 7.3 billion humans live on Earth and they depend on Earth’s resources for survival. Humans have developed various 
+	societies and cultures between each other and separated themselves by continent and state. </span>
+	
+	<h1>
+	<div class = "weightbot"> Your weight won't change because you live there!</div>
+	<div class = "weightbot"> If you're an alien, please put in your weight to see how much you weigh on Earth and select your planet! </div>
+	
+	<input type = "number" id = "userweight">
+	
+	<select id = "mySelect" onchange = "submitW();">
+	<option value = "None"> </option>
+	<option value = "Sun" > Sun </option>
+	<option value = "Mercury" > Mercury </option>
+	<option value = "Venus" > Venus </option>
+	<option value = "Moon" > The Moon </option>
+	<option value = "Mars" > Mars </option>
+	<option value = "Jupiter" > Jupiter </option>
+	<option value = "Saturn" > Saturn </option>
+	<option value = "Uranus" > Uranus </option>
+	<option value = "Neptune" > Neptune </option>
+	</select>
+	
+	
+	<div id = "weightchange"> </div>
+	
+	<br />
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a> 
+	</h1>
+	</div> 
+	</body>
+</html>

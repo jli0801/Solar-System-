@@ -1,0 +1,59 @@
+<!DOCTYPE	html>
+<!--Jessica Li-->
+<html>
+	<head>
+			<title>Neptune</title>
+			<link rel = "stylesheet" type = "text/css" href = "solarsystem.css" />
+			<style>
+			img
+			{
+				display : block;
+				margin : auto;
+				width : 35%;
+			}
+			</style>
+			<script>
+			function initialize()
+			{
+			weightChange = document.getElementById ("weightchange");
+			}
+			function getWeight()
+			{
+			userWeight = userweight.value;
+			changedW = userWeight * 1.125;
+			weightChange.innerHTML = changedW;
+			}
+			</script>
+	</head>
+	<body onload = "initialize();">
+	<div id = "container">
+	<h1>
+	<div class = "title"> Neptune </div>
+	<hr> 
+	<div class = "description"> The Blue Planet: </div> 
+	</h1>
+	<span> Neptune is the farthest known planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third largest planet, and the 
+	densest giant planet. Neptune is 17 times the mass of Earth and is slightly more massive than Uranus. Neptune orbits the Sun once around every 165 years at an average 
+	distance of 30.1 AU. It is named after the Roman god of the sea. Neptune is not visible to the naked eye and is the only planet in the Solar System found by mathematical 
+	calculation. </span>
+	<span> Neptune was observed with a telescope on 23 September 1846 by Johann Galle and its largest moon, Triton, was discovered after that. None of the planet's remaining 
+	14 moons were located until the 20th century. The planet's distance from Earth gives it a very small apparent size. Neptune's composition is similar to that of Uranus and 
+	unlike those of the larger gas giants, Jupiter and Saturn. Like Jupiter and Saturn, Neptune's atmosphere is composed primarily of hydrogen and helium and contains "ices" 
+	made from water, ammonia, and methane. Its interior is primarily composed of ices and rock, like Uranus. Neptune's blue color is the result of methane in the atmosphere. </span>
+	<span> Neptune's winds can be three times stronger than Jupiter's and nine times stronger than Earth's. Neptune has six known rings. In 1989, Voyager 2 found a large, 
+	oval-shaped, dark storm. Voyager 2's observations confirmed that these unusual rings are not uniform but have four thick regions called arcs. Neptune has 13 known moons, 
+	six of which were discovered by Voyager 2. A 14th tiny moon was discovered in 2013 but has no official recognition. </span>
+	<img src = "compareneptune.jpg" />
+	<br /> 
+	<h1>
+	<div class = "description"> Input your weight: </div>
+	<input type = "number" id = "userweight" >
+	<input type ="button" class = "button" value = "Enter!" onclick = "getWeight();">
+	<div id = "weightchange"> </div>
+	
+	
+	<a href = "index.html" class = "a1"> Let's go back to the Solar System! </a> 
+	</h1> 
+	</div> 
+	</body>
+</html>
